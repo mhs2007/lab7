@@ -1,4 +1,4 @@
-
+import sys
 def check_palindrome(string):
     if string == string[::-1]:
         return "Palindrome"
@@ -7,7 +7,7 @@ def check_palindrome(string):
 
 
 # Get input from user
-word = input("Enter a string: ")
+word = sys.argv[1]
 
 result = check_palindrome(word)
 print(result)
